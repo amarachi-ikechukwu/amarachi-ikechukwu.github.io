@@ -348,6 +348,27 @@ footer a{color:var(--gold2);text-decoration:none}
 .loop b{color:var(--gold2);font-weight:600}
 @media (max-width:1000px){.journey{grid-template-columns:1fr 1fr}}
 
+
+/* positioning statement */
+#position{background:linear-gradient(180deg,var(--cream),#FFF7E8);padding:84px 0}
+.position{max-width:900px;border-left:4px solid var(--gold);padding-left:34px}
+.position h2{font-size:clamp(28px,4.4vw,50px);line-height:1.18;margin-top:14px}
+.position h2 em{display:block;color:var(--terra);font-style:italic;font-weight:500;margin-top:6px}
+.position p{margin-top:22px;max-width:720px;font-size:clamp(16px,1.5vw,18.5px);color:var(--brown2);font-weight:300;line-height:1.75}
+.position p b{color:var(--brown);font-weight:600}
+
+/* how I run an account */
+.sub-head{margin:54px 0 22px}
+.sub-head h3{font-size:clamp(22px,2.6vw,30px);margin-top:8px}
+.play-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.play{background:#fff;border:1px solid var(--sand);border-radius:var(--radius);padding:28px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.play:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--gold)}
+.play .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--cream2);color:var(--terra);font-size:18px;margin-bottom:14px}
+.play h4{font-size:21px;margin-bottom:8px}
+.play p{font-size:14.8px;color:var(--muted);line-height:1.65}
+.ptags{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.ptag{font-size:11.5px;font-weight:600;letter-spacing:.03em;padding:5px 13px;border-radius:99px;background:rgba(185,85,47,.10);color:var(--terra)}
+
 /* responsive */
 @media (max-width:980px){
   .proj-grid{grid-template-columns:1fr 1fr}
@@ -368,6 +389,8 @@ footer a{color:var(--gold2);text-decoration:none}
   .skill-board{grid-template-columns:1fr}
   .contact-wrap{grid-template-columns:1fr}
   .journey{grid-template-columns:1fr}
+  .play-grid{grid-template-columns:1fr}
+  .position{padding-left:22px}
   .frow{grid-template-columns:1fr;gap:0}
   .form-card{padding:26px 22px}
   .tool-groups,.cert-grid{grid-template-columns:1fr}
@@ -458,17 +481,35 @@ footer a{color:var(--gold2);text-decoration:none}
   </div>
 </section>
 
+<!-- POSITIONING -->
+<section id="position" data-nav="about">
+  <div class="wrap">
+    <div class="position reveal">
+      <div class="eyebrow">My positioning</div>
+      <h2>On paper, I'm in Customer Experience.<em>By instinct, I think like a CSM.</em></h2>
+      <p>This isn't a change of direction. It's the work I've been doing all along: guiding customers through onboarding, <b>spotting risk early</b> and <b>protecting renewals</b>. Every skill on this page already matches what a CSM does day to day, so there's no learning curve to ask for. I'm ready to take on the account.</p>
+    </div>
+  </div>
+</section>
+
 <!-- WHAT I BRING -->
 <section id="value" data-nav="about">
   <div class="wrap">
     <div class="sec-head reveal"><div class="eyebrow">What I bring</div><h2>What I bring to your team</h2><div class="rule"></div></div>
     <div class="pillars">
-      <div class="pillar reveal" style="--d:.0s"><div class="ic">◐</div><h4>Onboarding &amp; Adoption</h4><p>Structured onboarding that turns sign-ups into active users and gets customers to first value faster.</p></div>
+      <div class="pillar reveal" style="--d:.0s"><div class="ic">◉</div><h4>Onboarding &amp; Adoption</h4><p>Structured onboarding that turns sign-ups into active users and gets customers to first value faster.</p></div>
       <div class="pillar reveal" style="--d:.08s"><div class="ic">❖</div><h4>Reduce Churn &amp; Retain Customers</h4><p>Health signals and early risk detection that keep customers longer and cut churn.</p></div>
       <div class="pillar reveal" style="--d:.16s"><div class="ic">↗</div><h4>Revenue Growth</h4><p>Retention, renewals and expansion that protect and grow recurring revenue.</p></div>
       <div class="pillar reveal" style="--d:.24s"><div class="ic">◈</div><h4>Strengthen Customer Relationships</h4><p>Trusted, proactive relationships that turn customers into long-term advocates.</p></div>
       <div class="pillar reveal" style="--d:.32s"><div class="ic">☰</div><h4>SOPs &amp; Systems</h4><p>Documented processes that make service repeatable and scalable.</p></div>
       <div class="pillar reveal" style="--d:.4s"><div class="ic">✦</div><h4>Voice of the Customer</h4><p>Feedback and complaint patterns turned into product and process decisions.</p></div>
+    </div>
+    <div class="sub-head reveal"><div class="eyebrow">How I run an account</div><h3>Playbooks, prioritisation and early warning</h3></div>
+    <div class="play-grid">
+      <div class="play reveal" style="--d:0s"><div class="ic">♛</div><h4>Champion Development</h4><p>When the person who championed the product leaves, I identify the next advocate early, brief them properly, and give them a clear win to share inside their company.</p><div class="ptags"><span class="ptag">Internal Advocacy</span><span class="ptag">Stakeholder Mapping</span></div></div>
+      <div class="play reveal" style="--d:.1s"><div class="ic">⚖</div><h4>Risk Prioritisation</h4><p>When several problems hit at once, I score each one on reach, impact, confidence and effort instead of guessing, so the account's limited hours go first to what moves the needle most.</p><div class="ptags"><span class="ptag">RICE Framework</span><span class="ptag">Risk Registers</span></div></div>
+      <div class="play reveal" style="--d:.2s"><div class="ic">◎</div><h4>Health Scoring &amp; Recovery</h4><p>I watch for the signals accounts send before they go quiet, such as falling usage, rising tickets or a champion who stops replying, and I step in well before a cancellation call.</p><div class="ptags"><span class="ptag">Early Warning</span><span class="ptag">Recovery Planning</span></div></div>
+      <div class="play reveal" style="--d:.3s"><div class="ic">▤</div><h4>Customer Success Playbooks</h4><p>I turn what works into repeatable playbooks for onboarding, risk response and renewals, so any CSM on the team can run the same play and deliver the same quality.</p><div class="ptags"><span class="ptag">CS Playbooks</span><span class="ptag">Renewal Plays</span><span class="ptag">Repeatable Process</span></div></div>
     </div>
     <div class="mission reveal">
       <div class="m-mark">&ldquo;</div>
@@ -488,7 +529,7 @@ footer a{color:var(--gold2);text-decoration:none}
       <div class="j-step reveal" style="--d:0.00s"><div class="j-n">01</div><h3>Welcome &amp; onboard</h3><p>A clear kickoff, shared success goals and step-by-step guidance through verification and setup, so no customer feels lost on day one.</p><span class="j-out">Faster activation</span></div>
       <div class="j-step reveal" style="--d:0.08s"><div class="j-n">02</div><h3>Activate &amp; adopt</h3><p>Training, tailored guidance and early-win milestones that get customers to first value quickly and using the product with confidence.</p><span class="j-out">First value sooner</span></div>
       <div class="j-step reveal" style="--d:0.16s"><div class="j-n">03</div><h3>Engage &amp; support</h3><p>Proactive check-ins, fast issue resolution and honest communication that build trust at every touchpoint.</p><span class="j-out">Stronger trust</span></div>
-      <div class="j-step reveal" style="--d:0.24s"><div class="j-n">04</div><h3>Monitor health &amp; risk</h3><p>Usage, billing and support signals reveal risk early, each with a clear owner and next step before a customer decides to leave.</p><span class="j-out">Churn caught early</span></div>
+      <div class="j-step reveal" style="--d:0.24s"><div class="j-n">04</div><h3>Monitor health &amp; risk</h3><p>Usage, billing and support signals reveal risk early. Each risk is scored with a RICE framework and given an owner and a next step before a customer decides to leave.</p><span class="j-out">Churn caught early</span></div>
       <div class="j-step reveal" style="--d:0.32s"><div class="j-n">05</div><h3>Retain &amp; renew</h3><p>Success plans, regular reviews and follow-up that give customers real reasons to stay and renew.</p><span class="j-out">Renewals and less churn</span></div>
       <div class="j-step reveal" style="--d:0.40s"><div class="j-n">06</div><h3>Grow &amp; advocate</h3><p>Spot upsell, cross-sell and expansion opportunities, and turn satisfied customers into long-term advocates.</p><span class="j-out">Revenue growth</span></div>
     </div>
@@ -536,6 +577,7 @@ footer a{color:var(--gold2);text-decoration:none}
       <div class="tg"><h4>Call &amp; Chat</h4><div class="chips"><span class="chip">Avaya</span><span class="chip">Avaya AXP</span><span class="chip">eGain</span><span class="chip">Koopid</span><span class="chip">Genesys</span><span class="chip">Tawk Live Chat</span></div></div>
       <div class="tg"><h4>Collaboration &amp; Productivity</h4><div class="chips"><span class="chip">Google Workspace</span><span class="chip">Microsoft 365</span><span class="chip">Microsoft Teams</span><span class="chip">Slack</span><span class="chip">Zoom</span><span class="chip">Calendly</span><span class="chip">Notion</span></div></div>
       <div class="tg"><h4>Automation, Analytics &amp; Design</h4><div class="chips"><span class="chip">Zapier</span><span class="chip">Mixpanel</span><span class="chip">Figma</span></div></div>
+      <div class="tg"><h4>Frameworks &amp; Methods</h4><div class="chips"><span class="chip">CS Playbooks</span><span class="chip">RICE Framework</span><span class="chip">Health Scoring</span><span class="chip">Success Plans</span><span class="chip">Journey Mapping</span><span class="chip">Voice of the Customer</span></div></div>
       <div class="tg"><h4>Project Management</h4><div class="chips"><span class="chip">Asana</span><span class="chip">Trello</span><span class="chip">ClickUp</span><span class="chip">Monday.com</span></div></div>
     </div>
   </div>
